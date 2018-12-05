@@ -53,7 +53,7 @@ body {
   /* header */
   
   #masthead {
-    position: fixed;
+    position: static;
     z-index: 99;
     width: 100%;
     margin: 0 0 30px;
@@ -215,8 +215,31 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
-  
+  /*Desktop*/
 @media screen and (min-width:980px){
-.container{background-color:blue}
+
 }
-    
+ /*Tablet*/
+@media only screen and (min-width:768px){
+
+}
+
+/*Phone*/
+@media only screen and (min-width:640px){
+  .sidebar {
+    width: 70%;
+    float: none;
+  }
+  .main-section {
+    width: 100%;
+  }
+    #masthead {
+    width: 70%;
+  }
+  .container{
+    width:100%;
+  }
+  nav{
+    width:100%;
+  }
+}
