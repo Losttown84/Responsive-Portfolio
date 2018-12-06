@@ -216,7 +216,7 @@ body {
     border: 0 none;
   }
   /*Desktop*/
-@media screen and (min-width:980px){
+@media screen and (max-width:980px){
   .sidebar {
     width: 70%;
     float: none;
@@ -225,24 +225,27 @@ body {
     width: 100%;
   }
     #masthead {
-    width: 70%;
+    width: 100%;
   }
   .main-container{
-    width:50%;
+    width:100%;
   }
   nav{
     width:100%;
   }
   .work{
-    width:70%;
+    width:100%;
   }
   .container{
+    width:100%;
+  }
+  body{
     width:100%;
   }
 
 }
  /*Tablet*/
-@media only screen and (min-width:768px){
+@media only screen and (max-width:768px){
   .sidebar {
     width: 70%;
     float: none;
@@ -251,16 +254,17 @@ body {
     width: 100%;
   }
     #masthead {
-    width: 70%;
+    position:fixed;
+    width: 100%;
   }
   .main-container{
-    width:50%;
+    width:100%;
   }
   nav{
     width:100%;
   }
   .work{
-    width:70%;
+    width:100%;
   }
   .container{
     width:100%;
@@ -268,27 +272,31 @@ body {
 }
 
 /*Phone*/
-@media only screen and (min-width:640px){
+@media only screen and (max-width:640px){
   .sidebar {
-    width: 70%;
+    width: 100%;
     float: none;
   }
   .main-section {
     width: 100%;
   }
     #masthead {
-    width: 70%;
+    position:fixed;
+    width: 100%;
   }
   .main-container{
-    width:50%;
+    width:100%;
   }
   nav{
-    width:80%;
+    width:100%;
   }
   .work{
-    width:70%;
+    width:20%;
   }
   .container{
     width:100%;
+  }
+  .contact-form{
+    width:50%;
   }
 }
